@@ -1,5 +1,4 @@
-name: GitHub Actions Demo # name 
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: GitHub pipline main # name 
 on: [push] # every push
 jobs:
   Explore-GitHub-Actions:
