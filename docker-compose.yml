@@ -1,0 +1,28 @@
+version: "3"
+
+volumes:
+  staticfiles:
+  postgres_data:
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - staticfiles:/app/staticfiles/
+      - ./backend:/app/backend/
+    command: python3 backend/manage.py runserver
+    depends_on:
+      - db
+  db:
+    image: postgres:latest
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    restart: always
+    ports:
+      - ${POSTGRES_PORT}:5432
