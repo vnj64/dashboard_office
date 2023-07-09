@@ -2,7 +2,7 @@ from rest_framework import generics
 
 from .models import Department
 from .serializers import DepartmentSerializer
-from api.mixins import StaffEditorPermissionMixin
+from ..api.mixins import StaffEditorPermissionMixin
 
 
 class DepartmentListCreateApiView(generics.ListCreateAPIView):

@@ -9,7 +9,6 @@ class DepartmentSerializer(serializers.ModelSerializer):
         view_name='dep-detail',
         lookup_field='pk'
     )
-    edit_url = serializers.SerializerMethodField(read_only=True)
 
     class Meta:
         model = Department
@@ -18,11 +17,3 @@ class DepartmentSerializer(serializers.ModelSerializer):
             'full_name',
             'floor'
         ]
-
-    def get_edit_url(self, obj):
-        request = self.context.get('request')
-        if not request:
-            return None
-        if not isinstance(obj, Department):
-            return None
-        return obj.get_short_name()
