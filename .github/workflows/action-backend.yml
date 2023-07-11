@@ -1,4 +1,4 @@
-name: Excursion check - nmp test
+name: dashoard check - backend
 on: [push]
 jobs:
   init:
@@ -10,9 +10,8 @@ jobs:
       - name: Set up Docker
         run: |
           sudo apt-get update
-          sudo apt-get install -y docker.io
-          sudo systemctl start docker
-          sudo systemctl enable docker
+          sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+          sudo systemctl enable docker --now
       
       - name: Build and start Docker
         run: | 
