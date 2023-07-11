@@ -8,34 +8,34 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Set up Docker
-      run: |
-        sudo apt-get update
-          
-        sudo apt-get install -y docker.io
-        sudo systemctl start docker
-        sudo systemctl enable docker
+      - name: Set up Docker
+        run: |
+          sudo apt-get update
+            
+          sudo apt-get install -y docker.io
+          sudo systemctl start docker
+          sudo systemctl enable docker
 
-        sudo apt-get remove -y containerd runc
+          sudo apt-get remove -y containerd runc
 
-    - name: Build and start Docker Compose
-      run: |
-        echo ---Building and starting up docker---
-        docker-compose up -d
-        echo ---Containers up---
+      - name: Build and start Docker Compose
+        run: |
+          echo ---Building and starting up docker---
+          docker-compose up -d
+          echo ---Containers up---
 
-    - name: Check Docker Compose
-      run: |
-        echo ---Checking Docker Compose---
-        docker-compose ps
-        echo ---Docker Compose check complete---
+      - name: Check Docker Compose
+        run: |
+          echo ---Checking Docker Compose---
+          docker-compose ps
+          echo ---Docker Compose check complete---
 
-    - name: Stop Docker Compose
-      run: |
-        echo ---Stopping Docker Compose---
-        docker-compose down
-        echo ---Docker Compose stopped---
+      - name: Stop Docker Compose
+        run: |
+          echo ---Stopping Docker Compose---
+          docker-compose down
+          echo ---Docker Compose stopped---
