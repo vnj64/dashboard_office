@@ -2,17 +2,17 @@ name: dashoard check - backend
 on: [push]
 jobs:
   init:
-    runs-on: ubuntu-latest
+    runs-on: docker-latest
     container:
-      image: ubuntu
+      image: docker
       
     steps:
-      - name: Set up Docker
+      - name: Update
         run: |
           apt-get update
 
-      - name: Install docker 
-        run:  apt-get install -y docker-ce 
+      # - name: Install docker 
+      #   run:  apt-get install -y docker-ce 
 
       - name: System docker 
         run: systemctl enable docker --now
