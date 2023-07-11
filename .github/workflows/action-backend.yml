@@ -1,0 +1,20 @@
+name: Excursion check - nmp test
+on: [push]
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    container:
+      image: ubuntu
+      
+    steps:
+      - name: Build docker
+        run: | 
+          echo ---Building and starting up docker---
+          docker compose -f docker-compose.yml -p testing up -d
+          echo ---Containers up---
+        
+      - name: Run test
+        run: |
+          echo --- Running test cases ---
+          docker compose -f docker-compose.yml -p testing up --build --exit-code-from api-test
+          echo --- Completed test cases ---
