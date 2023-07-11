@@ -10,8 +10,12 @@ jobs:
       - name: Set up Docker
         run: |
           apt-get update
-          apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-          systemctl enable docker --now
+
+      - name: Install docker 
+        run:  apt-get install -y docker-ce 
+
+      - name: System docker 
+        run: systemctl enable docker --now
       
       - name: Build and start Docker
         run: | 
