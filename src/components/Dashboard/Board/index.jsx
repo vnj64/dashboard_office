@@ -1,4 +1,4 @@
-import styles from './Dashboard.module.scss'
+import styles from './Board.module.scss'
 
 const Board = () => {
 	return (

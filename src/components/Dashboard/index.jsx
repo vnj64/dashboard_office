@@ -1,7 +1,6 @@
-import React from 'react'
-import styles from './Dashboard.module.scss'
-import Navigation from './Navigation'
 import Board from './Board'
+import Navigation from './Navigation'
+import styles from './Dashboard.module.scss'
 
 const Dashboard = () => {
 	return (
