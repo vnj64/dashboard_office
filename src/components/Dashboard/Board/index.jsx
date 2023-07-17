@@ -19,11 +19,13 @@ const Board = () => {
 				</div>
 				<div className={styles.gridCard}>two</div>
 				<div className={styles.gridCard + ' ' + styles.workplaces}>
-					<img
-						className={styles.workplacesArrow}
-						src='src/assets/icons/dashboard/aboutArrow.svg'
-						alt='arrow'
-					/>
+					<a href='#about'>
+						<img
+							className={styles.workplacesArrow}
+							src='src/assets/icons/dashboard/aboutArrow.svg'
+							alt='arrow'
+						/>
+					</a>
 					<div className={styles.workplacesBlockFirst}>200</div>
 					<div className={styles.workplacesBlockSecond}>22</div>
 					<span className={styles.workplacesSpanFirst}>222</span>

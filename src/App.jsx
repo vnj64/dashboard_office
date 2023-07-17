@@ -1,5 +1,6 @@
 import Welcome from './components/Welcome'
 import Dashboard from './components/Dashboard'
+import About from './components/About'
 import './scss/app.scss'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
 		<>
 			<Welcome />
 			<Dashboard />
+			<About />
 		</>
 	)
 }

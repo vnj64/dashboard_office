@@ -3,12 +3,14 @@ import styles from './Navigation.module.scss'
 const Navigation = () => {
 	return (
 		<nav className={styles.navigation}>
-			<div className={styles.navBlock}>
-				<div>
-					<img src='src/assets/icons/dashboard/about.svg' alt='about' />
+			<a href='#about'>
+				<div className={styles.navBlock}>
+					<div>
+						<img src='src/assets/icons/dashboard/about.svg' alt='about' />
+					</div>
+					<span>Об офисе</span>
 				</div>
-				<span>Об офисе</span>
-			</div>
+			</a>
 			<div className={styles.navBlock}>
 				<div>
 					<img src='src/assets/icons/dashboard/events.svg' alt='events' />

@@ -117,7 +117,7 @@
 			transition: all 0.4s ease-in-out;
 		}
 		&:hover {
-			background: #1d1d1d;
+			background: $green; //#1d1d1d
 			img {
 				transform: rotate(135deg);
 			}
