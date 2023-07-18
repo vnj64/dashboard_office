@@ -1,0 +1,21 @@
+name: Docker Compose Check
+on:
+  push:
+    branches:
+      - backend
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # need checkout before using compose-action
+      - uses: actions/checkout@v3
+      - uses: isbang/compose-action@v1.4.1
+
+        with:
+          compose-file: "docker-compose.yml"
+          down-flags: "--volumes"
+          services: |
+            backend
+            db
