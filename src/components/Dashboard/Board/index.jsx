@@ -12,10 +12,15 @@ const Board = () => {
 				<div className={styles.gridCard + ' ' + styles.events}>
 					<section>Мероприятия</section>
 					<span>/2023</span>
-					<div>
-						Посмотреть все{' '}
-						<img src='src/assets/icons/dashboard/eventsMore.svg' alt='arrow' />
-					</div>
+					<a href='#events'>
+						<div>
+							Посмотреть все{' '}
+							<img
+								src='src/assets/icons/dashboard/eventsMore.svg'
+								alt='arrow'
+							/>
+						</div>
+					</a>
 				</div>
 				<div className={styles.gridCard}>two</div>
 				<div className={styles.gridCard + ' ' + styles.workplaces}>
@@ -26,8 +31,14 @@ const Board = () => {
 							alt='arrow'
 						/>
 					</a>
-					<div className={styles.workplacesBlockFirst}>200</div>
-					<div className={styles.workplacesBlockSecond}>22</div>
+					<div className={styles.workplacesBlockFirst}>
+						<b>200</b>
+						резидентов
+					</div>
+					<div className={styles.workplacesBlockSecond}>
+						<b>22</b>
+						гостя
+					</div>
 					<span className={styles.workplacesSpanFirst}>222</span>
 					<img
 						className={styles.workplacesLine}
@@ -37,7 +48,9 @@ const Board = () => {
 					<span className={styles.workplacesSpanSecond}>рабочих места</span>
 				</div>
 				<div className={styles.gridCard + ' ' + styles.geography}>
-					<span>Детали</span>
+					<a href='#geography'>
+						<span>Откуда наши резиденты?</span>
+					</a>
 					<img
 						className={styles.geographyPath}
 						src='src/assets/icons/dashboard/geographyPath.svg'
@@ -51,6 +64,7 @@ const Board = () => {
 					<div></div>
 				</div>
 				<div className={styles.gridCard + ' ' + styles.portrait}>
+					<div className={styles.portraitTitle}>Портрет резидента</div>
 					<img
 						className={styles.portraitImage}
 						src='src/assets/photos/portraitDashboard.png'
@@ -61,12 +75,28 @@ const Board = () => {
 						src='src/assets/icons/dashboard/portraitArrow.svg'
 						alt='arrow'
 					/>
-					<div>Изучить портрет</div>
+					<a href='#portrait'>
+						<div className={styles.portraitLink}>Изучить</div>
+					</a>
 				</div>
-				<div className={styles.gridCard + ' ' + styles.slider}>
-					<img src='src/assets/photos/dashboardSliderFirst.jpg' alt='first' />
-					<img src='src/assets/photos/dashboardSliderSecond.jpg' alt='second' />
-					<img src='src/assets/photos/dashboardSliderThird.jpg' alt='third' />
+				<div className={styles.gridCard + ' ' + styles.sliderBlock}>
+					<a href='#hobby'>
+						<div className={styles.hobbyLink}>
+							Хобби резидентов{' '}
+							<img
+								src='src/assets/icons/dashboard/eventsMore.svg'
+								alt='arrow'
+							/>
+						</div>
+					</a>
+					<div className={styles.slider}>
+						<img src='src/assets/photos/dashboardSliderFirst.jpg' alt='first' />
+						<img
+							src='src/assets/photos/dashboardSliderSecond.jpg'
+							alt='second'
+						/>
+						<img src='src/assets/photos/dashboardSliderThird.jpg' alt='third' />
+					</div>
 				</div>
 			</div>
 		</section>

@@ -11,30 +11,41 @@ const Navigation = () => {
 					<span>Об офисе</span>
 				</div>
 			</a>
-			<div className={styles.navBlock}>
-				<div>
-					<img src='src/assets/icons/dashboard/events.svg' alt='events' />
+			<a href='#events'>
+				<div className={styles.navBlock}>
+					<div>
+						<img src='src/assets/icons/dashboard/events.svg' alt='events' />
+					</div>
+					<span>Мероприятия</span>
 				</div>
-				<span>Мероприятия</span>
-			</div>
-			<div className={styles.navBlock}>
-				<div>
-					<img src='src/assets/icons/dashboard/portrait.svg' alt='portrait' />
+			</a>
+			<a href='#portrait'>
+				<div className={styles.navBlock}>
+					<div>
+						<img src='src/assets/icons/dashboard/portrait.svg' alt='portrait' />
+					</div>
+					<span>Портрет кандидата</span>
 				</div>
-				<span>Портрет кандидата</span>
-			</div>
-			<div className={styles.navBlock}>
-				<div>
-					<img src='src/assets/icons/dashboard/geography.svg' alt='geography' />
+			</a>
+			<a href='#geography'>
+				<div className={styles.navBlock}>
+					<div>
+						<img
+							src='src/assets/icons/dashboard/geography.svg'
+							alt='geography'
+						/>
+					</div>
+					<span>География</span>
 				</div>
-				<span>География</span>
-			</div>
-			<div className={styles.navBlock}>
-				<div>
-					<img src='src/assets/icons/dashboard/hobby.svg' alt='hobby' />
+			</a>
+			<a href='#hobby'>
+				<div className={styles.navBlock}>
+					<div>
+						<img src='src/assets/icons/dashboard/hobby.svg' alt='hobby' />
+					</div>
+					<span>Хобби</span>
 				</div>
-				<span>Хобби</span>
-			</div>
+			</a>
 		</nav>
 	)
 }
