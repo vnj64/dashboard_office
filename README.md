@@ -36,4 +36,4 @@ npm run dev
 ```
 
 ## Issues.
- If you find any er
+ If you find any error, please write to [issue](https://github.com/vnj64/dashboard_office/issues). Thank you!
