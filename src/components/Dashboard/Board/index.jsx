@@ -22,7 +22,9 @@ const Board = () => {
 						</div>
 					</a>
 				</div>
-				<div className={styles.gridCard}>two</div>
+				<div className={styles.gridCard + ' ' + styles.emptyBlock}>
+					<div></div>
+				</div>
 				<div className={styles.gridCard + ' ' + styles.workplaces}>
 					<a href='#about'>
 						<img
