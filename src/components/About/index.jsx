@@ -9,7 +9,11 @@ const About = () => {
 					<span className={styles.spanFirst}>Добро пожаловать</span>
 					<span className={styles.spanSecond}> в Сбер КИБ</span>
 					<img src='src/assets/photos/aboutGradientsBlock.jpg' alt='space' />
-					<a href='https://dancinginthedarkk.github.io/SberPractic1/'>
+					<a
+						href='https://dancinginthedarkk.github.io/SberPractic1/'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
 						<div className={styles.tour}>
 							<span>Экскурсия</span>
 							<img src='src/assets/icons/about/tour.svg' alt='tour' />
