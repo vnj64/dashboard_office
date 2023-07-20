@@ -1,6 +1,6 @@
 import Board from './Board'
-import Navigation from './Navigation'
 import styles from './Dashboard.module.scss'
+import Navigation from './Navigation'
 
 const Dashboard = () => {
 	return (

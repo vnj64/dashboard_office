@@ -5,13 +5,16 @@ const About = () => {
 		<a name='about'>
 			<main className={styles.main}>
 				<div className={styles.gradientBlock}>
+					{/* <div className={styles.logo}></div> */}
 					<span className={styles.spanFirst}>Добро пожаловать</span>
 					<span className={styles.spanSecond}> в Сбер КИБ</span>
 					<img src='src/assets/photos/aboutGradientsBlock.jpg' alt='space' />
-					<div className={styles.tour}>
-						<span>Экскурсия</span>
-						<img src='src/assets/icons/about/tour.svg' alt='tour' />
-					</div>
+					<a href='https://dancinginthedarkk.github.io/SberPractic1/'>
+						<div className={styles.tour}>
+							<span>Экскурсия</span>
+							<img src='src/assets/icons/about/tour.svg' alt='tour' />
+						</div>
+					</a>
 				</div>
 				<span className={styles.whatIs}>Что такое КИБ?</span>
 				<section className={styles.officeBlock}>
