@@ -125,9 +125,43 @@
 	}
 }
 
+.emptyBlock {
+	overflow: hidden;
+	div {
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			135deg,
+			#35c378 28px,
+			rgba(53, 195, 120, 0) 50%,
+			#35c378
+		);
+	}
+}
+
 .portrait {
 	position: relative;
 	background-color: $green;
+
+	.portraitTitle {
+		position: absolute;
+		top: 15px;
+		left: 15px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		border-radius: 100px;
+		border: 1px solid #fff;
+
+		width: 229px;
+		height: 46px;
+
+		color: #fff;
+		font-size: 18px;
+		font-weight: 500;
+	}
 
 	.portraitArrow {
 		position: absolute;
@@ -144,7 +178,7 @@
 		filter: drop-shadow((-0px -10px 1px #fff)) drop-shadow((5px 10px 1px #fff));
 	}
 
-	div {
+	.portraitLink {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -195,6 +229,7 @@
 
 	.workplacesBlockFirst {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
@@ -208,12 +243,18 @@
 		border: 1px solid #000;
 		border-radius: 15px;
 
-		font-size: 18px;
+		font-size: 10px;
 		font-weight: 500;
+
+		b {
+			font-size: 18px;
+			font-weight: 500;
+		}
 	}
 
 	.workplacesBlockSecond {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 
@@ -230,6 +271,15 @@
 
 		font-size: 18px;
 		font-weight: 500;
+
+		font-size: 10px;
+		font-weight: 500;
+
+		b {
+			color: #fff;
+			font-size: 18px;
+			font-weight: 500;
+		}
 
 		&::before {
 			content: '+';
@@ -316,6 +366,8 @@
 .slider {
 	overflow: hidden;
 	position: relative;
+	width: 100%;
+	height: 100%;
 	img {
 		position: absolute;
 		top: 5%;
@@ -330,6 +382,8 @@
 		object-position: center;
 		animation: round 12s infinite;
 		opacity: 0;
+
+		filter: blur(3px);
 	}
 
 	@keyframes round {
@@ -348,5 +402,46 @@
 	}
 	img:nth-child(3) {
 		animation-delay: 0s;
+	}
+}
+
+.sliderBlock {
+	position: relative;
+}
+
+.hobbyLink {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	left: 17.5%;
+	bottom: 10%;
+
+	width: 65%;
+	height: 13%;
+	background-color: #000;
+	color: #fff;
+
+	border-radius: 20px;
+
+	font-size: 18px;
+	font-weight: 500;
+
+	z-index: 1;
+	cursor: pointer;
+	transition: all 0.4s ease-in-out;
+
+	img {
+		margin-left: 10px;
+		width: 15px;
+		transition: all 0.4s ease-in-out;
+	}
+
+	&:hover {
+		background: $green; //#1d1d1d
+		img {
+			transform: rotate(135deg);
+		}
 	}
 }
