@@ -1,4 +1,9 @@
 import styles from './Navigation.module.scss'
+import aboutIcon from '/src/assets/icons/dashboard/about.svg'
+import eventsIcon from '/src/assets/icons/dashboard/events.svg'
+import portraitIcon from '/src/assets/icons/dashboard/portrait.svg'
+import geographyIcon from '/src/assets/icons/dashboard/geography.svg'
+import hobbyIcon from '/src/assets/icons/dashboard/hobby.svg'
 
 const Navigation = () => {
 	return (
@@ -6,7 +11,7 @@ const Navigation = () => {
 			<a href='#about'>
 				<div className={styles.navBlock}>
 					<div>
-						<img src='src/assets/icons/dashboard/about.svg' alt='about' />
+						<img src={aboutIcon} alt='about' />
 					</div>
 					<span>Об офисе</span>
 				</div>
@@ -14,7 +19,7 @@ const Navigation = () => {
 			<a href='#events'>
 				<div className={styles.navBlock}>
 					<div>
-						<img src='src/assets/icons/dashboard/events.svg' alt='events' />
+						<img src={eventsIcon} alt='events' />
 					</div>
 					<span>Мероприятия</span>
 				</div>
@@ -22,7 +27,7 @@ const Navigation = () => {
 			<a href='#portrait'>
 				<div className={styles.navBlock}>
 					<div>
-						<img src='src/assets/icons/dashboard/portrait.svg' alt='portrait' />
+						<img src={portraitIcon} alt='portrait' />
 					</div>
 					<span>Портрет кандидата</span>
 				</div>
@@ -30,10 +35,7 @@ const Navigation = () => {
 			<a href='#geography'>
 				<div className={styles.navBlock}>
 					<div>
-						<img
-							src='src/assets/icons/dashboard/geography.svg'
-							alt='geography'
-						/>
+						<img src={geographyIcon} alt='geography' />
 					</div>
 					<span>География</span>
 				</div>
@@ -41,7 +43,7 @@ const Navigation = () => {
 			<a href='#hobby'>
 				<div className={styles.navBlock}>
 					<div>
-						<img src='src/assets/icons/dashboard/hobby.svg' alt='hobby' />
+						<img src={hobbyIcon} alt='hobby' />
 					</div>
 					<span>Хобби</span>
 				</div>

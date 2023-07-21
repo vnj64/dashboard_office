@@ -1,4 +1,6 @@
 import styles from './Welcome.module.scss'
+import ship from '/src/assets/icons/welcome/welcome-ship.svg'
+import arrow from '/src/assets/icons/welcome/welcome-arrow.svg'
 
 const Welcome = () => {
 	return (
@@ -9,14 +11,10 @@ const Welcome = () => {
 					<br />
 					порт
 				</h1>
-				<img src='src/assets/icons/welcome/welcome-ship.svg' alt='ship' />
+				<img src={ship} alt='ship' />
 			</div>
 			<a href='#dashboard'>
-				<img
-					className={styles.arrow}
-					src='src/assets/icons/welcome/welcome-arrow.svg'
-					alt='arrow'
-				/>
+				<img className={styles.arrow} src={arrow} alt='arrow' />
 			</a>
 		</main>
 	)

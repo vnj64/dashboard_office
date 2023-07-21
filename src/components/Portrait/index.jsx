@@ -1,27 +1,22 @@
 import styles from './Portrait.module.scss'
+import blob1 from '/src/assets/icons/events/blob1.svg'
+import blob2 from '/src/assets/icons/events/blob2.svg'
+import blob3 from '/src/assets/icons/events/blob3.svg'
+import titleIcon from '/src/assets/icons/portrait/titleGuy.svg'
+import portraitPath from '/src/assets/icons/portrait/path.svg'
+import portraitArrow from '/src/assets/icons/portrait/arrow.svg'
+import portraitGuy from '/src/assets/photos/portraitGuy.png'
 
 const Portrait = () => {
 	return (
 		<a name='portrait'>
 			<main className={styles.main}>
-				<img
-					src='src/assets/icons/events/blob1.svg'
-					alt='blob'
-					className={styles.blob1}
-				/>
-				<img
-					src='src/assets/icons/events/blob2.svg'
-					alt='blob'
-					className={styles.blob2}
-				/>
-				<img
-					src='src/assets/icons/events/blob3.svg'
-					alt='blob'
-					className={styles.blob3}
-				/>
+				<img src={blob1} alt='blob' className={styles.blob1} />
+				<img src={blob2} alt='blob' className={styles.blob2} />
+				<img src={blob3} alt='blob' className={styles.blob3} />
 
 				<div className={styles.titleBlock}>
-					<img src='src/assets/icons/portrait/titleGuy.svg' alt='guy' />
+					<img src={titleIcon} alt='guy' />
 					<span>Портрет кандидата</span>
 				</div>
 				<section className={styles.stats}>
@@ -34,7 +29,7 @@ const Portrait = () => {
 						<span className={styles.high}>
 							<b>37</b>лет
 						</span>
-						<img src='src/assets/icons/portrait/path.svg' alt='path' />
+						<img src={portraitPath} alt='path' />
 					</div>
 					<div className={styles.residentStat}>
 						<span>
@@ -50,16 +45,8 @@ const Portrait = () => {
 					</div>
 
 					<div className={styles.gradientPhotoBlock}>
-						<img
-							className={styles.arrow}
-							src='src/assets/icons/portrait/arrow.svg'
-							alt='arrow'
-						/>
-						<img
-							className={styles.photo}
-							src='src/assets/photos/portraitGuy.png'
-							alt='guy'
-						/>
+						<img className={styles.arrow} src={portraitArrow} alt='arrow' />
+						<img className={styles.photo} src={portraitGuy} alt='guy' />
 					</div>
 				</section>
 			</main>
