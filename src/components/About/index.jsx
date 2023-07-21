@@ -1,14 +1,15 @@
 import styles from './About.module.scss'
+import gradientBlockImg from '/src/assets/photos/aboutGradientsBlock.jpg'
+import tourLink from '/src/assets/icons/about/tour.svg'
 
 const About = () => {
 	return (
 		<a name='about'>
 			<main className={styles.main}>
 				<div className={styles.gradientBlock}>
-					{/* <div className={styles.logo}></div> */}
 					<span className={styles.spanFirst}>Добро пожаловать</span>
 					<span className={styles.spanSecond}> в Сбер КИБ</span>
-					<img src='src/assets/photos/aboutGradientsBlock.jpg' alt='space' />
+					<img src={gradientBlockImg} alt='space' />
 					<a
 						href='https://dancinginthedarkk.github.io/SberPractic1/'
 						target='_blank'
@@ -16,7 +17,7 @@ const About = () => {
 					>
 						<div className={styles.tour}>
 							<span>Экскурсия</span>
-							<img src='src/assets/icons/about/tour.svg' alt='tour' />
+							<img src={tourLink} alt='tour' />
 						</div>
 					</a>
 				</div>

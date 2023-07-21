@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import styles from './Geography.module.scss'
+import mainPoint from '/src/assets/icons/geography/mainPoint.svg'
+import point from '/src/assets/icons/geography/point.svg'
 
 const Geography = () => {
 	const cityPoints = [
@@ -41,11 +43,7 @@ const Geography = () => {
 				</ul>
 
 				<section className={styles.mapBlock}>
-					<img
-						src='src/assets/icons/geography/mainPoint.svg'
-						alt='main point'
-						className={styles.mainPoint}
-					/>
+					<img src={mainPoint} alt='main point' className={styles.mainPoint} />
 					{cityPoints.map(city => (
 						// <img
 						// 	key={city.name}
@@ -59,7 +57,7 @@ const Geography = () => {
 						// />
 						<svg
 							key={city.name}
-							src='src/assets/icons/geography/point.svg'
+							src={point}
 							alt='point'
 							className={
 								city.name === hovered
