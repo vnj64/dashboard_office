@@ -22,8 +22,20 @@ const Board = () => {
 						</div>
 					</a>
 				</div>
-				<div className={styles.gridCard + ' ' + styles.emptyBlock}>
-					<div></div>
+				<div className={styles.gridCard + ' ' + styles.employees}>
+					<div className={styles.employeesTitle}>Грейды</div>
+					<div className={styles.diagram}>
+						<img src='src/assets/icons/dashboard/diagram.svg' alt='diagram' />
+						<div className={styles.employeesStat + ' ' + styles.juniors}>
+							Джунов (12)
+						</div>
+						<div className={styles.employeesStat + ' ' + styles.middles}>
+							Миддлов (100)
+						</div>
+						<div className={styles.employeesStat + ' ' + styles.seniors}>
+							Сеньеров (13)
+						</div>
+					</div>
 				</div>
 				<div className={styles.gridCard + ' ' + styles.workplaces}>
 					<a href='#about'>
