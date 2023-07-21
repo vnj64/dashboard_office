@@ -7,6 +7,7 @@ We tried to do everything so that the employee would understand in what a lovely
 
 ## Technology stack.
 - [React.js](https://react.dev/)
+- [Vite.js](https://vitejs.dev/)
 - [SCSS](https://sass-scss.ru/)
 - [Splidejs](https://splidejs.com/)
 
