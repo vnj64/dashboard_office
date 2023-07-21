@@ -62,7 +62,7 @@ const Events = () => {
 							/>
 						</SplideSlide>
 						<SplideSlide>
-							<div className={styles.sliderText}>Творческий вечер</div>
+							<div className={styles.sliderText}>Кикер</div>
 							<img
 								className={styles.sliderImg}
 								src='src/assets/photos/eventsPageSlider/image4.jpg'
