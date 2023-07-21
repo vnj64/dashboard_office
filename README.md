@@ -14,7 +14,6 @@ We tried to do everything so that the employee would understand in what a lovely
 ## Contributors.
 - [Darky](https://github.com/darkystacks) (Frontend dev)
 - [vnJ](https://github.com/vnj64) (Backend dev)
-- [Igor](https://github.com/Dubrovsky18) (DevOps)
 
 ## Project setup.
 ```
